@@ -26,12 +26,10 @@ function random2() {
 }
 function reset() {
     total = 0
-    $(".main-section").html(comp)
     $(".total").text(total)
     arr = []
-    random()
-
-
+    comp = random()
+    $(".main-section").html(comp)
 }
 
 
@@ -42,7 +40,7 @@ $(".image").on("click", function () {
     if (total == comp) {
         wins++
         $(".span1").html(wins)
-         if($(".main").find(".result-text").length<=0){
+        if ($(".main").find(".result-text").length <= 0) {
             x = $("<div>")
             $(x).addClass("result-text")
             $(".main").prepend(x)
@@ -55,15 +53,18 @@ $(".image").on("click", function () {
     else if (total > comp) {
         losses++
         $(".span2").html(losses)
-        if($(".main").find(".result-text").length<=0){
+        if ($(".main").find(".result-text").length <= 0) {
             x = $("<div>")
             $(x).addClass("result-text")
             $(".main").prepend(x)
         }
+
         $(x).text("You lose")
-       reset()
+        reset()
+
     }
 })
+
 
 
 
