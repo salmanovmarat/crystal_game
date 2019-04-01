@@ -1,0 +1,67 @@
+body{
+    background-image:url("images/background_img.jpg")
+    
+}
+.image{
+    width:90px;
+    height:90px;
+}
+h1{
+    width:250px;
+    background:chocolate;
+    text-align:center;
+    padding:5px;
+    color:white;
+}
+.container{
+    width: 420px;
+    height:420px;
+    background:bisque;
+    padding:10px;
+    margin-bottom:15px;
+    font-weight: bold;
+    color:green;
+}
+.section{
+    width: 550px;
+    height:250px;
+    
+}
+
+.main-section{
+    width:200px;
+    height:110px;
+    background:mediumseagreen;
+    font-size:40px;
+    color:purple;
+    padding:5px;
+    float:left;
+
+  
+
+   
+}
+.main{
+    height:80px;
+    background:aqua;
+    width:50px;
+    padding:20px;
+    display:inline-block;
+ 
+
+}
+.score{
+    width:210px;
+    padding:4px;
+    background:darkcyan;
+    color:white;
+}
+.total{
+    margin-top:10px;
+    width:210px;
+    height:100px;
+    background:darkcyan;
+    color:white;
+    font-size:35px;
+    padding:4px;
+}
