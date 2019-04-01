@@ -4,6 +4,7 @@ var total = 0
 
 function random() {
     var computer = Math.floor(Math.random() * 120) + 19
+    random2()
     return computer
 }
 var comp = random()
@@ -23,12 +24,12 @@ function random2() {
     $("#img3").attr("data-num", arr[2])
     $("#img4").attr("data-num", arr[3])
 }
-random2()
 function reset() {
     total = 0
-    comp = random()
     $(".main-section").html(comp)
     $(".total").text(total)
+    arr = []
+    random()
 
 
 }
